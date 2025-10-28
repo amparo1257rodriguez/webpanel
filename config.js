@@ -3,9 +3,10 @@
 window.WEBPANEL_CONFIG = {
   nombrePanel: "GOAT GAMING",
   logo: "assets/logo.png", // Cambia por la ruta del logo del cliente
-    colorLetra: "#222222", // Color para letras y textos
-    colorTitulo: "#FFD700", // Color para títulos
-    colorSubtitulo: "#f4580fff", // Color para subtítulos
+  colorLetra: "#222222", // Color para letras y textos
+  colorTitulo: "#FFD700", // Color para títulos
+  colorSubtitulo: "#f4580fff", // Color para subtítulos
+  colorRosa: "#ff0000ff", // Color rosa para efectos neon
   colorFondo: "#909c45ff", // Color de fondo principal
   colorDetalle: "#ffeb14ff", // Color para detalles y banner
   whatsapp: "5491123456789" // Solo números, con código de país

@@ -12,8 +12,9 @@ window.addEventListener('DOMContentLoaded', function() {
   document.documentElement.style.setProperty('--color-letra', cfg.colorLetra);
   document.documentElement.style.setProperty('--color-fondo', cfg.colorFondo);
   document.documentElement.style.setProperty('--color-detalle', cfg.colorDetalle);
-    document.documentElement.style.setProperty('--color-titulo', cfg.colorTitulo);
-    document.documentElement.style.setProperty('--color-subtitulo', cfg.colorSubtitulo);
+  document.documentElement.style.setProperty('--color-titulo', cfg.colorTitulo);
+  document.documentElement.style.setProperty('--color-subtitulo', cfg.colorSubtitulo);
+  document.documentElement.style.setProperty('--color-rosa', cfg.colorRosa);
 
   // Logo y nombre en nav
     // Asignar color a títulos y subtítulos
