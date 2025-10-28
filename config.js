@@ -9,5 +9,5 @@ window.WEBPANEL_CONFIG = {
   colorRosa: "#ff0000ff", // Color rosa para efectos neon
   colorFondo: "#909c45ff", // Color de fondo principal
   colorDetalle: "#ffeb14ff", // Color para detalles y banner
-  whatsapp: "5491123456789" // Solo números, con código de país
+  whatsapp: "5491176116950" // Solo números, con código de país
 };
