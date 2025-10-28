@@ -12,8 +12,27 @@ window.addEventListener('DOMContentLoaded', function() {
   document.documentElement.style.setProperty('--color-letra', cfg.colorLetra);
   document.documentElement.style.setProperty('--color-fondo', cfg.colorFondo);
   document.documentElement.style.setProperty('--color-detalle', cfg.colorDetalle);
+    document.documentElement.style.setProperty('--color-titulo', cfg.colorTitulo);
+    document.documentElement.style.setProperty('--color-subtitulo', cfg.colorSubtitulo);
 
   // Logo y nombre en nav
+    // Asignar color a títulos y subtítulos
+    var heroTitle = document.getElementById('hero-title');
+    if (heroTitle) {
+      heroTitle.style.color = cfg.colorTitulo;
+    }
+    var navTitle = document.getElementById('nav-title');
+    if (navTitle) {
+      navTitle.style.color = cfg.colorTitulo;
+    }
+    var footerTitle = document.getElementById('footer-title');
+    if (footerTitle) {
+      footerTitle.style.color = cfg.colorSubtitulo;
+    }
+    var heroDesc = document.querySelector('.hero-desc');
+    if (heroDesc) {
+      heroDesc.style.color = cfg.colorSubtitulo;
+    }
   var navLogo = document.getElementById('nav-logo');
   if (navLogo) {
     navLogo.src = cfg.logo;
