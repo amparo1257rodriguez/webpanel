@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@700&display=swap');
 @media (max-width: 600px) {
   /* MOBILE: ocultar payasita, ajustar espaciado y tamaños */
@@ -11,6 +12,16 @@
     padding-left: 0.5rem;
   text-shadow: 0 0 8px var(--color-rosa), 0 0 12px #00ffe7;
   }
+  /* Mostrar payasita solo en mobile arriba del texto */
+.mobile-payasita { display: none; }
+.desktop-payasita { display: block; }
+
+@media (max-width: 400px) {
+  .mobile-payasita { display: block !important; }
+  .desktop-payasita { display: none !important; }
+  .neon-title { font-size: 0.3rem; }
+}
+    
     .hero-content {
       width: 100vw;
       max-width: 100vw;
@@ -38,6 +49,7 @@
     width: 110px;
     max-width: 40vw;
     filter: drop-shadow(0 0 10px var(--color-detalle));
+    margin-bottom: -60px !important;
   }
     .hero-content {
       max-width: 98vw;
@@ -233,7 +245,7 @@ body {
 }
 .neon-title {
   font-family: 'Luckiest Guy', cursive, sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-bottom: 1.2rem;
   font-weight: 900;
   letter-spacing: 2px;
