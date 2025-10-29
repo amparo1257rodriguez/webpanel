@@ -64,6 +64,14 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 
   // WhatsApp
-  const waBtn = document.getElementById('whatsapp-btn');
-  waBtn.href = `https://wa.me/${cfg.whatsapp}`;
+    const waBtn = document.getElementById('whatsapp-btn');
+    if (waBtn) {
+      // Puedes cambiar 'Usuario' por el valor de un input si lo deseas
+      let nombre = "Usuario";
+      const nombreInput = document.getElementById('nombre-input');
+      if (nombreInput && nombreInput.value) {
+        nombre = nombreInput.value;
+      }
+      waBtn.href = cfg.whatsappUrl(nombre);
+    }
 });
