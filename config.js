@@ -10,4 +10,10 @@ window.WEBPANEL_CONFIG = {
   colorFondo: "#909c45ff", // Color de fondo principal
   colorDetalle: "#ffeb14ff", // Color para detalles y banner
   whatsapp: "5491176116950" // Solo números, con código de país
+  , whatsappMensaje: "¡Hola! Quiero crear un USU4RIO. Mi nombre es:"
+  , whatsappUrl: function(nombre) {
+    const numero = this.whatsapp;
+    const mensaje = `${this.whatsappMensaje} ${nombre}`;
+    return `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  }
 };
