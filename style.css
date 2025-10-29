@@ -19,7 +19,10 @@
 @media (max-width: 400px) {
   .mobile-payasita { display: block !important; }
   .desktop-payasita { display: none !important; }
-  .neon-title { font-size: 0.3rem; }
+}
+
+@media (max-width: 320px) {
+  .neon-title { font-size: 3rem !important; }
 }
     
     .hero-content {
