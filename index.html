@@ -53,5 +53,19 @@
       <p>© 2025. Canal alternativo de contacto.</p>
     </div>
   </footer>
+  <script>
+  document.getElementById('whatsapp-btn').addEventListener('click', function() {
+    // Evento personalizado de Meta Pixel
+    fbq('trackCustom', 'ClickWhatsApp', {
+      platform: 'WhatsApp',
+      page: document.title, // opcional: agrega contexto
+      timestamp: new Date().toISOString()
+    });
+
+    // Redirigir al chat de WhatsApp (agregá tu número)
+    window.open('https://wa.me/5491123456789', '_blank');
+  });
+</script>
+
 </body>
 </html>
